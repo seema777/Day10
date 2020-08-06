@@ -2,3 +2,10 @@
 
 echo "Welcome to Arthimatic Computation and Sorting on Master Branch"
 
+
+#!/bin/bash -x
+
+read -p "Enter First number: " a
+read -p "Enter Second number: " b
+read -p "Enter Third number: " c
+
