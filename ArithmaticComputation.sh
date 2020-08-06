@@ -46,4 +46,19 @@ read -p "Enter Third number: " c
 echo $(( (a % b) + c ))
 
 
+#!/bin/bash -x
+
+read -p "Enter First number: " a
+read -p "Enter Second number: " b
+read -p "Enter Third number: " c
+
+declare -A dict
+
+dict["Result1"]=$(( (a + b) * c ))
+dict["Result2"]=$(( (a * b) + c ))
+dict["Result3"]=$(( (c + a) / b ))
+dict["Result4"]=$(( (a % b) + c ))
+
+echo ${dict[@]}
+
 
